@@ -14,10 +14,10 @@ const Brands = () => {
     return (
        <div>
            <h1 className='text-5xl my-5'>Met Our Brand Partner</h1>
-           <div class="carousel carousel-end gap-5 rounded-box items-center justify-center my-5">
+           <div class="carousel carousel-end gap-5  rounded-box items-center justify-center my-5">
                 {
-                    brands.map(brand=>(
-                        <div class="carousel-item">
+                    brands.map(brand=>( 
+                        <div key={brand._id} class="carousel-item ">
                             <img src={brand.img} alt='brand' class="rounded-box" />
                          </div> 
                     ))

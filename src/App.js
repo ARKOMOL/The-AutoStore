@@ -10,6 +10,10 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Contact from './Pages/Header/ForAllUsers/Contact/Contact';
 import Home from './Pages/HomePage/Home';
 import PurchasePage from './Pages/HomePage/Purchase/PurchasePage';
+import MyProtfolio from './Pages/Header/ForAllUsers/MyProtfolio';
+import MyProfile from './Pages/Header/LoginUser/MyProfile';
+import AddReview from './Pages/Header/LoginUser/AddReview';
+import MyOrders from './Pages/Header/LoginUser/MyOrders';
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
      <Routes>
        <Route path='/' element={<Home/>} />
        <Route path='/contact' element={<Contact/>} />
+       <Route path='/protfolio' element={<MyProtfolio/>} />
+       <Route path='/orders' element={<MyOrders/>} />
+       <Route path='/add-review' element={<AddReview/>} />
+       <Route path='/profile' element={<MyProfile/>} />
        <Route path='/purchase/:id' element={<PurchasePage/>} />
        <Route path='/login' element={ <Login/>} />
        <Route path='/about' element={
