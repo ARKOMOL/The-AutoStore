@@ -2,13 +2,13 @@ import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 import About from './Pages/Header/ForAllUsers/About/About';
-import Home from './Pages/Home/Home';
 import Navbar from './Pages/Navbar/Navbar';
 import RequireAuth from '../src/Pages/Shared/RequireAuth/RequireAuth'
 import Login from './Pages/Shared/Login/Login';
 import SignUp from './Pages/Shared/SignUp/SignUp';
 import Footer from './Pages/Shared/Footer/Footer';
 import Contact from './Pages/Header/ForAllUsers/Contact/Contact';
+import Home from './Pages/HomePage/Home';
 
 function App() {
   return (
