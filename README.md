@@ -1,0 +1,2 @@
+-Here i use tailwind with daisy UI which is one of  the famous component library for tailwind css.
+-
