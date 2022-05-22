@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 const PartsDetails = ({part}) => {
     // console.log(part);
     const {name,img,description,availableQuantity,minQuantity,price} = part;
-    const navigate = useNavigate()
+    let navigate = useNavigate();
+ 
     return (
         <div>
           
@@ -18,7 +19,7 @@ const PartsDetails = ({part}) => {
                 <p>Available Parts: {availableQuantity} </p>
                 <p>Price: ${price} </p>
                 <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+                 <button onClick={()=> navigate(`/purchase/${part._id}`)} class="btn btn-primary"  > Buy Now </button>
                 </div>
             </div>
         </div>

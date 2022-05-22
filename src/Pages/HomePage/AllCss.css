@@ -1,0 +1,10 @@
+.banner{
+    background-color: aliceblue;
+    background: url('../../logo.svg');
+    background: url('https://previews.123rf.com/images/vladru/vladru1303/vladru130300004/18560953-many-auto-parts-done-in-3d.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-primary{
+    font-size: large;
+}

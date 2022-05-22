@@ -3,8 +3,8 @@ import UseParts from '../../Hooks/UseParts';
 import PartsDetails from './PartsDetails';
 
 const Parts = () => {
-    const [parts,setParts] = UseParts();
-    console.log(parts);
+    const [parts] = UseParts();
+    // console.log(parts);
     return (
         <div>
             <h1 className='text-4xl'>
