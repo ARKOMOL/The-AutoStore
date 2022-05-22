@@ -1,15 +1,20 @@
 import React from 'react';
 import Banner from './Banner';
+import BusinessSummary from './BusinessSummary/BusinessSummary';
 import Parts from './Parts';
+import Reviews from './Review/Reviews';
+
 
 
 const Home = () => {
   
     return (
         <div>
-            <h1>Hello komol</h1>
+            
         <Banner/>
         <Parts/>
+        <BusinessSummary/>
+        <Reviews/>
         </div>
     );
 };

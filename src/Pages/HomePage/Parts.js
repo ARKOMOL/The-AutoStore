@@ -11,9 +11,9 @@ const Parts = () => {
                 Our Parts
             </h1>
 
-            <div class="Lg:mx-32 md:mx-32 container card bg-base-100 shadow-xl  grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center mt-5  l">
+            <div class="Lg:mx-32 md:mx-32 container gap-5 card bg-base-100 shadow-xl  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center mt-5  l">
   
-  {
+             {
                 parts.map(part =><PartsDetails key={part._id} part ={part}/>)
             }
             </div>
