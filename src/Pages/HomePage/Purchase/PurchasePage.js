@@ -11,7 +11,8 @@ const PurchasePage = () => {
     const {name,img,description,availableQuantity,minQuantity,price} = parts;
 
     useEffect(()=>{
-        const url = `http://localhost:4000/purchase/${id}`;
+        // const url = `http://localhost:4000/purchase/${id}`;
+        const url = `https://peaceful-shore-76688.herokuapp.com/purchase/${id}`;
       
         console.log(url);
         fetch(url)
