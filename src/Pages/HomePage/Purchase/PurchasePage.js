@@ -5,7 +5,7 @@ import auth from '../../../Components/Firebase/Firebase.init';
 
 const PurchasePage = () => {
     const [user] = useAuthState(auth);
-    console.log(user);
+    // console.log(user);
     const  {id} = useParams();
     const [parts,SetParts] = useState({});
     const {name,img,description,availableQuantity,minQuantity,price} = parts;
