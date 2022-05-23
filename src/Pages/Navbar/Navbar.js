@@ -6,6 +6,7 @@ import auth from '../../Components/Firebase/Firebase.init';
 
 const Navbar = () => {
   const [user] = useAuthState(auth)
+  console.log(user);
   const logout = () => {
     signOut(auth);
   };
@@ -19,10 +20,15 @@ const Navbar = () => {
                <li> <Link to='/orders'>My Orders</Link></li>
                <li><Link to='/add-review'>Add Review</Link></li>
                <li> <Link to='/profile'>My Profile</Link></li>
+               
               </>
             }
            { user?
-            <li> <button  onClick={logout}>signout <br />{user.displayName}</button></li>:
+           <>
+            <li> <button className='btn btn-ancent text-dark'  onClick={logout}>signout <br /></button></li>
+            <li> <Link to='/profile'><img className='rounded-full w-8 h-25' src={user?.photoURL} alt="" />{user?.displayName}</Link></li>
+           </>
+             :
             <li> <Link to='/login'>Login</Link></li>
             }
                  </>
@@ -40,7 +46,7 @@ const Navbar = () => {
       </label>
 
     </div>
-    <Link to='/' class="btn btn-ghost normal-case text-xl">The AutoCars</Link>
+    <Link to='/' class="btn btn-ghost normal-case text-xl">The AutoStore</Link>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
