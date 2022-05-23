@@ -14,6 +14,10 @@ import MyProtfolio from './Pages/Header/ForAllUsers/MyProtfolio';
 import MyProfile from './Pages/Header/LoginUser/MyProfile';
 import AddReview from './Pages/Header/LoginUser/AddReview';
 import MyOrders from './Pages/Header/LoginUser/MyOrders';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import ManageAllOrders from './Pages/Header/Admin/ManageAllOrders';
+import AddProducts from './Pages/Header/Admin/AddProducts';
+import MakeAdmin from './Pages/Header/Admin/MakeAdmin';
 
 function App() {
   return (
@@ -24,9 +28,16 @@ function App() {
        <Route path='/' element={<Home/>} />
        <Route path='/contact' element={<Contact/>} />
        <Route path='/protfolio' element={<MyProtfolio/>} />
-       <Route path='/orders' element={<MyOrders/>} />
-       <Route path='/add-review' element={<AddReview/>} />
-       <Route path='/profile' element={<MyProfile/>} />
+       <Route path='/dashboard' element={<Dashboard/>} >
+            <Route path='orders' element={<MyOrders/>} />
+            <Route path='add-review' element={<AddReview/>} />
+            <Route path='profile' element={<MyProfile/>} />
+            <Route path='make-admin' element={<MakeAdmin/>} />
+            <Route path='add-products' element={<AddProducts/>} />
+            <Route path='manage-all-orders' element={<ManageAllOrders/>} />
+
+       </Route>
+      
        <Route path='/purchase/:id' element={<PurchasePage/>} />
        <Route path='/login' element={ <Login/>} />
        <Route path='/about' element={
