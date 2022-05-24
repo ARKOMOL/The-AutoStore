@@ -7,6 +7,8 @@ import './Login.css';
 
 import Spinner from '../Spinner/Spinner';
 import auth from '../../../Components/Firebase/Firebase.init';
+import useToken from '../../../Hooks/useToken';
+
 
 const Login = () => {
   
@@ -16,7 +18,10 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+   
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const [token] = useToken(user || gUser)
     const navigate =useNavigate();
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
@@ -24,7 +29,7 @@ const Login = () => {
     const emailRef = useRef('');
     const passRef = useRef('');
 
-    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+   
     // const [signInWithFacebook, fUser, fLoading, fError] = useSignInWithFacebook(auth);
 
 
@@ -35,7 +40,7 @@ const Login = () => {
 
 
   
-    if (user || gUser) {
+    if (token) {
         navigate(from,{replace:true})
     }
  
@@ -79,7 +84,7 @@ const Login = () => {
                 </form>
         
                 <p>
-                    New to Dentist Ace? <Link className='form-link' to="/signup">Create an account</Link>
+                    New to The AutoStore? <Link className='form-link' to="/signup">Create an account</Link>
                 </p>
                
                 <button className='hover:bg-sky-700 btn btn-circle ' onClick={resetPassword}>reset password</button> 

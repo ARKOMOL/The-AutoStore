@@ -6,6 +6,7 @@ import '../Login/Login.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../Components/Firebase/Firebase.init';
+import useToken from '../../../Hooks/useToken';
 
 const SignUp = () => {
     const [name, setName] = useState('');
@@ -19,7 +20,7 @@ const SignUp = () => {
     let from = location.state?.from?.pathname || '/';
 
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification: true})
-
+const [token] = useToken(user )
     const handleName = event =>{
         setName(event.target.value);
         console.log(event.target.value)
@@ -40,7 +41,7 @@ const SignUp = () => {
         setConfirmPassword(event.target.value);
     }
 
-    if(user){
+    if(token){
         navigate(from,{replace:true});
     }
 
