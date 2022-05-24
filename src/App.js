@@ -18,6 +18,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import ManageAllOrders from './Pages/Header/Admin/ManageAllOrders';
 import AddProducts from './Pages/Header/Admin/AddProducts';
 import MakeAdmin from './Pages/Header/Admin/MakeAdmin';
+import BusinessSummary from './Pages/HomePage/BusinessSummary/BusinessSummary';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
        } />
        <Route path='/signup' element={<SignUp/>} />
      </Routes>
+     <BusinessSummary/>
       <Footer/>
      <ToastContainer/>
     </div>
