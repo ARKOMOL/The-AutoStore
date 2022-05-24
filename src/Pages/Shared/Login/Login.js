@@ -64,11 +64,11 @@ const Login = () => {
                 <h2 className='form-title text-center text-4xl'>Login</h2>
                 <form className='login-form' onSubmit={handleUserSignIn}>
                     <div className="input-group ms-5">
-                        <input ref={emailRef} type="email" value='komol@gmail.com' name="email" placeholder='Email'  required />
+                        <input ref={emailRef} type="email" value='admin77@gmail.com' name="email" placeholder='Email'  required />
                     </div>
                     <div className="input-group ms-5">
                         
-                        <input ref={passRef} type="password" name="password" value='123456' placeholder='Password' id="" required />
+                        <input ref={passRef} type="password" name="password" value='admin77' placeholder='Password' id="" required />
                     </div>
                     <p style={{ color: 'red' }}>{error?.message}</p>
                     {

@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 const AddProducts = () => {
     const { register, formState: { errors }, handleSubmit,reset } = useForm();
     const onSubmit = data => {
-        console.log(data)
+        // console.log(data)
 
         //  const url = `http://localhost:4000/parts`
          const url = `https://peaceful-shore-76688.herokuapp.com/parts`
@@ -17,8 +17,8 @@ const AddProducts = () => {
         body:JSON.stringify(data)
     })
     .then(res =>res.json())
-    .then(finalResult =>{
-        console.log(finalResult);
+    .then(result =>{
+        console.log(result);
         reset()
     })
 
@@ -36,22 +36,18 @@ const AddProducts = () => {
                     <div class="card-body items-center text-center">
                         <form onSubmit={handleSubmit(onSubmit)}>
 
-                        <div className="form-control  justify-center w-full max-w-xs">
-                                    <label className="label">
-                                        <span className="label-text">Name</span>
-                                    </label>
+                        <div className="form-control mt-4  justify-center w-full max-w-xs">
+                                 
                         <input
                         type="text"
                         placeholder="Name"
                         className="input input-bordered w-full max-w-xs"
                         {...register("name", { required: true })} />
-                        {errors.ratings?.type === 'required' && "Ratings is required"}
+                        {errors.name?.type === 'required' && "Name is required"}
                         </div>
 
-                        <div className="form-control  justify-center w-full max-w-xs">
-                                    <label className="label">
-                                        <span className="label-text">Photo</span>
-                                    </label>
+                        <div className="form-control my-4   justify-center w-full max-w-xs">
+                                   
                         <input
                         type="text"
                         placeholder="Photo"
@@ -61,9 +57,7 @@ const AddProducts = () => {
                         </div>
 
                         <div className="form-control  justify-center w-full max-w-xs">
-                                    <label className="label">
-                                        <span className="label-text">Description</span>
-                                    </label>
+                                
                         <input
                         type="text"
                         placeholder="Description"
@@ -72,10 +66,8 @@ const AddProducts = () => {
                         {errors.description?.type === 'required' && "Description is required"}
                         </div>
 
-                        <div className="form-control  justify-center w-full max-w-xs">
-                                    <label className="label">
-                                        <span className="label-text">price</span>
-                                    </label>
+                        <div className="form-control my-4  justify-center w-full max-w-xs">
+                                  
                         <input
                         type="text"
                         placeholder="Price"
@@ -85,9 +77,7 @@ const AddProducts = () => {
                         </div>
 
                         <div className="form-control  justify-center w-full max-w-xs">
-                                    <label className="label">
-                                        <span className="label-text">Min Quantity</span>
-                                    </label>
+                                 
                         <input
                         type="number"
                         placeholder="Min Quantity"
@@ -96,16 +86,14 @@ const AddProducts = () => {
                         {errors.minQuantity?.type === 'required' && "Min Quantity is required"}
                         </div>
 
-                        <div className="form-control  justify-center w-full max-w-xs">
-                                    <label className="label">
-                                        <span className="label-text">Available Quantity</span>
-                                    </label>
+                        <div className="form-control my-4  justify-center w-full max-w-xs">
+                                
                         <input
                         type="number"
                         placeholder="Available Quantity"
                         className="input input-bordered w-full max-w-xs"
                          {...register("availableQuantity", { required: true })} />
-                        {errors.availableQuantity?.type && "Description is required"}
+                        {errors.availableQuantity?.type &&<span className="label-text-alt text-red-500"> Description is required </span>}
                         </div>  
                         <input className='btn btn-info justify-center my-4 max-w-xs' type="submit" />
                         </form>
