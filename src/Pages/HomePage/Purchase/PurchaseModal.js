@@ -61,7 +61,9 @@ const PurchaseModal = ({parts,setParts,handleToQunantity}) => {
           })
             .then((res) => res.json())
             .then((data) => {
-              toast.success('Ordered SuccessFull')
+              
+                toast.success('Ordered SuccessFull')
+            
                 console.log(data)});
 
         
@@ -86,13 +88,23 @@ const PurchaseModal = ({parts,setParts,handleToQunantity}) => {
 
         <input type="text" placeholder="Type here" value={user?.displayName} class="input input-bordered w-full max-w-xs" />
         <input type="text" placeholder="Type here" value={user?.email} class="input input-bordered w-full max-w-xs" />
-        <input type="number" placeholder="Order Quantity" name='orderQuantity' class="input input-bordered w-full max-w-xs" required />
-        <input type="text" name='phone' placeholder="Phone"  class="input input-bordered w-full max-w-xs" />
-        <input type="text" name='address' placeholder="Address" class="input input-bordered w-full max-w-xs" />
-        <div class="modal-action">
-        <input type="submit"  value="Submit"  class=" form-control input font-bold btn-primary input-bordered w-full max-w-xs" />
-         </div>
         
+       { availableQuantity > 200 ?
+        <input type="number" placeholder="Order Quantity" name='orderQuantity' class="input input-bordered w-full max-w-xs" required />
+        :  <>
+            <input type="text" disabled placeholder='You cannot order'  class="input text-red-400 input-bordered w-full max-w-xs"  />
+            <span className='text-red-500'>You cannot order</span>
+        </>
+        }
+        <input type="text" name='phone' placeholder="Phone"  class="input input-bordered w-full max-w-xs" required/>
+        <input type="text" name='address' placeholder="Address" class="input input-bordered w-full max-w-xs" required />
+        { availableQuantity > 200 ?
+
+                <input type="submit"  value="Confirm Order"  class=" form-control input font-bold btn-primary input-bordered max-w-xs" />
+                : 
+                <input type="submit" disabled value='Confirm Order'  class=" form-control input font-bold btn-primary " />
+
+        }
     </form>
 
     

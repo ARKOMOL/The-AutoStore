@@ -1,38 +1,49 @@
-import React from 'react';
-import UseParts from '../../../Hooks/UseParts';
+import React, { useEffect, useState } from 'react';
 import ManageAllOrdersInfo from './ManageAllOrdersInfo';
 
 const ManageAllOrders = () => {
 
-    const [parts,setParts] = UseParts();
+    const [orders,setOrders] = useState([]);
 
-    const handleToDelete = id =>{
-        const confirm = window.confirm ('Want to delete this item?')
-       if (confirm) {
-        // const url = `http://localhost:4000/purchase/${id}`;
-        const url = `https://peaceful-shore-76688.herokuapp.com/purchase/${id}`
-       
-        fetch(url,{
-            method:'DELETE'
+    useEffect(()=>{
+        fetch('http://localhost:4000/order-list')
+        .then(res=>res.json())
+        .then(data=>{
+            // console.log(data);
+            setOrders(data)
         })
-        .then(res =>res.json())
-        .then(data =>{
-            console.log(data);
-            const restParts = parts.filter(product => product._id !== id);
-            setParts(restParts);
-        })
-       }
-    }
+    },[orders])
+
 
 
     return (
         <div>
             <h1 className='text-4xl text-yellow-500'>Manage All Orders</h1>
-            <div class="Lg:mx-32 md:mx-32 container gap-5 card bg-base-100 shadow-xl  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center mt-5  l">
-  
-                {
-                    parts.map(part =><ManageAllOrdersInfo key={part._id} part ={part} handleToDelete={handleToDelete} />)
-                }
+            <h1 className='text-3xl text-yellow-500 py-3'> All Orders: {orders.length} </h1>
+           
+            <div class="overflow-x-auto">
+                <table class="table w-full">
+                <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Quantity</th>
+                            <th>Number</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {
+                           orders.map((order,index)=><ManageAllOrdersInfo
+                           key={order._id}
+                           order={order}
+                           index ={index}
+                          
+                           ></ManageAllOrdersInfo>)
+                       }
+                    </tbody>
+                </table>
             </div>
 
 
