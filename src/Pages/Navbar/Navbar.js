@@ -26,7 +26,7 @@ const Navbar = () => {
            { user?
            <>
             <li> <button className='btn btn-ancent text-dark'  onClick={logout}>signout <br /></button></li>
-            <li> <Link to='/dashboard/profile'><img className='rounded-full w-8 h-25' src={user?.photoURL} alt="" />{user?.displayName}</Link></li>
+            <li> <Link to='/dashboard'><img className='rounded-full w-8 h-25' src={user?.photoURL} alt="" />{user?.displayName}</Link></li>
            </>
              :
             <li> <Link to='/login'>Login</Link></li>

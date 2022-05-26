@@ -1,3 +1,4 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../Components/Firebase/Firebase.init';
@@ -11,10 +12,24 @@ const MyOrders = () => {
 
     useEffect(()=>{
         if (user) {
-            fetch(`http://localhost:4000/order?orderinfo=${user.email}`)
-        .then(res=>res.json())
+            fetch(`http://localhost:4000/order?orderinfo=${user.email}`,{
+                method: 'GET',
+                headers: {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                }
+
+            })
+            .then(res => {
+                console.log('res', res);
+                if (res.status === 401 || res.status === 403) {
+                    signOut(auth);
+                    localStorage.removeItem('accessToken');
+                    
+                }
+                return res.json()
+            })
         .then(data => {
-            // console.log(data);
+            console.log(data);
             setMyOrders(data)
         })
         }
