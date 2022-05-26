@@ -7,8 +7,8 @@ const ManageAllOrders = () => {
     const [orders,setOrders] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/order-list')
-        // fetch('https://peaceful-shore-76688.herokuapp.com/order-list')
+        // fetch('http://localhost:4000/order-list')
+        fetch('https://peaceful-shore-76688.herokuapp.com/order-list')
         .then(res=>res.json())
         .then(data=>{
             // console.log(data);
@@ -20,8 +20,8 @@ const ManageAllOrders = () => {
     const handleToDelete = id =>{
         const confirm = window.confirm ('Want to delete this item?')
        if (confirm) {
-        const url = `http://localhost:4000/orderList/${id}`;
-        // const url = `https://peaceful-shore-76688.herokuapp.com/orderList/${id}`
+        // const url = `http://localhost:4000/orderList/${id}`;
+        const url = `https://peaceful-shore-76688.herokuapp.com/orderList/${id}`
        
         fetch(url,{
             method:'DELETE'

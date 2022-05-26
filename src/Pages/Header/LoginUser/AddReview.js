@@ -7,8 +7,8 @@ const AddReview = () => {
     const onSubmit = data => {
         // console.log(data)
 
-         const url = `http://localhost:4000/review`
-        //  const url = `https://peaceful-shore-76688.herokuapp.com/review`
+        //  const url = `http://localhost:4000/review`
+         const url = `https://peaceful-shore-76688.herokuapp.com/review`
     console.log(url);
     fetch(url, {
         method:'POST',

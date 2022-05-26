@@ -12,7 +12,8 @@ const MyOrders = () => {
 
     useEffect(()=>{
         if (user) {
-            fetch(`http://localhost:4000/order?orderinfo=${user.email}`,{
+            // fetch(`http://localhost:4000/order?orderinfo=${user.email}`,{
+            fetch(`https://peaceful-shore-76688.herokuapp.com/order?orderinfo=${user.email}`,{
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

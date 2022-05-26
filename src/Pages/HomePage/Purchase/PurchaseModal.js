@@ -30,7 +30,8 @@ const PurchaseModal = ({parts,setParts,handleToQunantity}) => {
 
         }
 
-        fetch('http://localhost:4000/order',{
+        // fetch('http://localhost:4000/order',{
+        fetch('https://peaceful-shore-76688.herokuapp.com/order',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
@@ -51,7 +52,8 @@ const PurchaseModal = ({parts,setParts,handleToQunantity}) => {
        
     
         
-          const url = `http://localhost:4000/purchase/${id}`
+        //   const url = `http://localhost:4000/purchase/${id}`
+          const url = `https://peaceful-shore-76688.herokuapp.com/purchase/${id}`
           fetch(url, {
             method: "PUT",
             headers: {
