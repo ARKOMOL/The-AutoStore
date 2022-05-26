@@ -20,6 +20,14 @@ const PurchasePage = () => {
         .then(res=>res.json())
         .then(data =>setParts(data))
     },[id,setParts])
+
+    const handleToQunantity = e=>{
+         
+   
+ 
+    }
+
+
     return (
         <div>
           <div class="hero  bg-base-200">
@@ -27,7 +35,7 @@ const PurchasePage = () => {
             <div class="hero-content flex-col lg:flex-row">
             <img src={img} alt="Shoes" className='w-full'  class="rounded-xl" />
                 <div>
-                {<p>Current User: {user.displayName}</p>}
+                {<p>Current User: {user?.displayName}</p>}
           
                 <h1 class="text-5xl font-bold">{name}</h1>
                 <p class="py-6">{description}</p>
@@ -36,7 +44,7 @@ const PurchasePage = () => {
                 <p class="py-6">Price Per Unit: {price}</p>
                 <label for="purchase-modal" class="btn btn-primary modal-button">Purchase</label>
                 </div>
-                {parts && <PurchaseModal parts ={parts} setParts={setParts}/>}
+                {parts && <PurchaseModal parts ={parts} setParts={setParts} handleToQunantity={handleToQunantity} />}
                
             </div>
             </div>
