@@ -17,7 +17,7 @@ const Brands = () => {
            <div class="carousel carousel-end gap-5  rounded-box items-center justify-center my-5">
                 {
                     brands.map(brand=>( 
-                        <div key={brand._id} class="carousel-item ">
+                        <div key={brand.id} class="carousel-item ">
                             <img src={brand.img} alt='brand' class="rounded-box" />
                          </div> 
                     ))

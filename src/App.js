@@ -30,12 +30,12 @@ function App() {
        <Route path='/contact' element={<Contact/>} />
        <Route path='/protfolio' element={<MyProtfolio/>} />
        <Route path='dashboard' element={<Dashboard/>} >
+            <Route index element={<MyProfile/>} />
             <Route path='orders' element={<MyOrders/>} />
             <Route path='add-review' element={<AddReview/>} />
-            <Route path='profile' element={<MyProfile/>} />
             <Route path='make-admin' element={<MakeAdmin/>} />
             <Route path='add-products' element={<AddProducts/>} />
-            <Route path='manage-all-orders' element={<ManageAllOrders/>} />
+            <Route path='manage-all-orders' element={<MyOrders/>} />
 
        </Route>
       
@@ -48,7 +48,7 @@ function App() {
        } />
        <Route path='/signup' element={<SignUp/>} />
      </Routes>
-     <BusinessSummary/>
+    
       <Footer/>
      <ToastContainer/>
     </div>

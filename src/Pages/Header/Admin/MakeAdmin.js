@@ -5,7 +5,13 @@ import AdminRow from './AdminRow';
 
 const MakeAdmin = () => {
     // const url = 'http://localhost:4000/user'
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:4000/user',).then(res => res.json()));
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:4000/user', {
+        method:'GET',
+        headers:{
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
+        
+        }
+    }).then(res => res.json()));
     if (isLoading) {
         return <Spinner/>
     }
