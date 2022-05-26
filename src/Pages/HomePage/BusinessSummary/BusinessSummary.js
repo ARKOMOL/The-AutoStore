@@ -1,5 +1,5 @@
 import React from 'react';
-import { GrFlag } from 'react-icons/gr';
+
 
 const BusinessSummary = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useForm } from 'react-hook-form';
+
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -10,7 +10,7 @@ const PurchaseModal = ({parts,setParts,handleToQunantity}) => {
     // console.log(parts);
     const  {id} = useParams();
     const [user] = useAuthState(auth)
-    const {reset} = useForm()
+    
     // console.log(user);
     const {_id,name,availableQuantity,minQuantity,price} = parts;
     
