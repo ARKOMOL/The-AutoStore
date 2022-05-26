@@ -47,17 +47,13 @@ function App() {
          </RequireAuth>
        } />
        <Route path='/login' element={ <Login/>} />
-       <Route path='/about' element={
-         <RequireAuth>
-           <About/>
-         </RequireAuth>
-       } />
+       <Route path='/about' element={<About/> } />
        <Route path='/signup' element={<SignUp/>} />
        <Route path='/blogs' element={<Blogs/>} />
        <Route path ='*' element={<NotFound/>}/>
      </Routes>
     
-      <Footer/>
+    <Footer/>
      <ToastContainer/>
     </div>
   );

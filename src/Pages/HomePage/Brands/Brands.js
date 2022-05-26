@@ -13,7 +13,7 @@ const Brands = () => {
     },[])
     return (
        <div>
-           <h1 className='text-5xl my-5'>Met Our Brand Partner</h1>
+           <h1 className='text-4xl my-5'>Met Our Brand Partner</h1>
            <div class="carousel carousel-end gap-5  rounded-box items-center justify-center my-5">
                 {
                     brands.map(brand=>( 

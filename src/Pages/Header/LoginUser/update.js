@@ -1,4 +1,4 @@
-import { updateProfile } from 'firebase/auth';
+
 import { useState } from 'react';
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
@@ -22,25 +22,26 @@ const UpdateProfile = () => {
   }
   return (
     <div className="App">
-      <label htmlFor="">
-        Name
-      </label>
+    
       <input
         type="displayName"
+        placeholder='Your Name'
         value={displayName}
+        className="input input-bordered w-full max-w-xs my-5"
         onChange={(e) => setDisplayName(e.target.value)}
         required
       /> <br />
-      <label htmlFor="">
-        Photo
-      </label>
+     
       <input
         type="photoURL"
         value={photoURL}
+      placeholder="Your Photo"
+        className="input input-bordered w-full max-w-xs"
         onChange={(e) => setPhotoURL(e.target.value)}
         required
-      />  <br />
-      <button
+      /> 
+      <br />
+      <button className='btn btn-info justify-center my-4 max-w-xs'
         onClick={async () => {
           await updateProfile({ displayName, photoURL });
           toast('Updated profile');

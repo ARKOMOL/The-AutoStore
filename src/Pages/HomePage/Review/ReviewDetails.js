@@ -13,7 +13,7 @@ const ReviewDetails = ({rev}) => {
             <h2 class="card-title">{name}</h2>
             <p>{title}</p>
             <p>Minumum Buy: {review} </p>
-            <p>Ratings: {ratings} </p>
+            <p>Ratings: {ratings} Star </p>
          
         </div>
     </div>
