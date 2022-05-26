@@ -19,6 +19,8 @@ import ManageAllOrders from './Pages/Header/Admin/ManageAllOrders';
 import AddProducts from './Pages/Header/Admin/AddProducts';
 import MakeAdmin from './Pages/Header/Admin/MakeAdmin';
 import BusinessSummary from './Pages/HomePage/BusinessSummary/BusinessSummary';
+import NotFound from './Pages/Shared/NotFound/NotFound';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -39,7 +41,11 @@ function App() {
 
        </Route>
       
-       <Route path='/purchase/:id' element={<PurchasePage/>} />
+       <Route path='/purchase/:id' element={
+         <RequireAuth>
+           <PurchasePage/>
+         </RequireAuth>
+       } />
        <Route path='/login' element={ <Login/>} />
        <Route path='/about' element={
          <RequireAuth>
@@ -47,6 +53,8 @@ function App() {
          </RequireAuth>
        } />
        <Route path='/signup' element={<SignUp/>} />
+       <Route path='/blogs' element={<Blogs/>} />
+       <Route path ='*' element={<NotFound/>}/>
      </Routes>
     
       <Footer/>

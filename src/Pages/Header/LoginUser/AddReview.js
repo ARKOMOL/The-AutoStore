@@ -1,3 +1,4 @@
+import { data } from 'autoprefixer';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -58,14 +59,17 @@ const AddReview = () => {
                          
                         <div className="form-control  justify-center w-full max-w-xs">
                                    
-                        <input
+                        {data.ratings ===1? '⭐' :data.ratings ===2? '⭐⭐' :data.ratings ===3? '⭐⭐⭐' :data.ratings ===4? '⭐⭐⭐⭐' :data.ratings ===5? '⭐⭐⭐⭐⭐' :
+                           
+                            <input
                         type="number"
                         placeholder="Your Ratings"
                         className="input input-bordered w-full max-w-xs"
                         {...register("ratings", { required: true })} />
+                        }
                         {errors.ratings?.type === 'required' && "Ratings is required"}
                         </div>
-                        
+
                          <div className="form-control  justify-center w-full max-w-xs">
                                   
                         <input
