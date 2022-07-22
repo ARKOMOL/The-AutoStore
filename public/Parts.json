@@ -1,50 +1,50 @@
 [
     {
-        "name":"ACDELCO 335 PROFESSIONAL",
-        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/a/c/acdelco_335_professional.jpg",
-        "description":"This is a best parts in our showroom",
-        "price":40,
-        "minQuantity":10,
+        "name":"HANKOOK DYNAPRO AT-M RF10",
+        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/h/a/hankook_dynapro_at-m_rf10.jpg",
+        "description":"Dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option into nihil imperdiet doming id quod mazim placerat facer possim assum est notare.",
+        "price":90.00,
+        "minQuantity":200,
         "availableQuantity":1000
     },
     {
-        "name":"ACDELCO 335 PROFESSIONAL",
-        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/d73afe5e199941627cc95f6716d1305e/h/a/hankook_dynapro_off-road.jpg",
-        "description":"This is a best parts in our showroom",
-        "price":40,
-        "minQuantity":10,
-        "availableQuantity":1000
+        "name":"CAR PRECEDENT LED HEADLIGHT",
+        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/c/a/car_precedent_led_headlight_2.jpg",
+        "description":"Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.  Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.",
+        "price":70.00,
+        "minQuantity":200,
+        "availableQuantity":2000
     },
     {
-        "name":"ACDELCO 335 PROFESSIONAL",
-        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/d73afe5e199941627cc95f6716d1305e/h/a/hankook_dynapro_off-road.jpg",
-        "description":"This is a best parts in our showroom",
-        "price":40,
-        "minQuantity":10,
-        "availableQuantity":1000
+        "name":"CAR EASY INSTALLATION FORLAND",
+        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/c/a/car_easy_installation_forland__1.jpg",
+        "description":"Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.  Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.",
+        "price":125.00,
+        "minQuantity":200,
+        "availableQuantity":2500
     },
     {
-        "name":"ACDELCO 335 PROFESSIONAL",
-        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/d73afe5e199941627cc95f6716d1305e/h/a/hankook_dynapro_off-road.jpg",
-        "description":"This is a best parts in our showroom",
-        "price":40,
-        "minQuantity":10,
-        "availableQuantity":1000
+        "name":"EVOLUTION BRAKE KIT WITH DRILLED",
+        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/e/v/evolution_brake_kit_with_drilled.jpg",
+        "description":"Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.  Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.",
+        "price":55.00,
+        "minQuantity":200,
+        "availableQuantity":3500
     },
     {
-        "name":"ACDELCO 335 PROFESSIONAL",
-        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/d73afe5e199941627cc95f6716d1305e/h/a/hankook_dynapro_off-road.jpg",
-        "description":"This is a best parts in our showroom",
-        "price":40,
-        "minQuantity":10,
-        "availableQuantity":1000
+        "name":"DISCOUNT STARTER AND ALTERNATOR",
+        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/d/i/discount_starter_and_alternator_1.jpg",
+        "description":"Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.  Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.",
+        "price":102.00,
+        "minQuantity":200,
+        "availableQuantity":1600
     },
     {
-        "name":"ACDELCO 335 PROFESSIONAL",
-        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/d73afe5e199941627cc95f6716d1305e/h/a/hankook_dynapro_off-road.jpg",
-        "description":"This is a best parts in our showroom",
-        "price":40,
-        "minQuantity":10,
-        "availableQuantity":1000
+        "name":"DB ELECTRICAL ALTERNATOR",
+        "img":"http://magento2.magentech.com/themes/sm_autostore/pub/media/catalog/product/cache/23f378e15be5dfebb810cd9d0f6df4cd/d/b/db_electrical_alternator.jpg",
+        "description":"Proin nunc nibh, adipiscing eu nisi id, ultrices suscipit augue. Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.  Sed rhoncus hendrerit lacus, et venenatis felis. Donec ut fringilla magna. Vivamus eu enim ut metus dictum cursus facilisis sit amet mi.",
+        "price":69.00,
+        "minQuantity":200,
+        "availableQuantity":3000
     }
 ]

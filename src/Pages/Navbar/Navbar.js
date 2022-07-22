@@ -35,7 +35,7 @@ const Navbar = () => {
                  </>
     return (
         <div>
-            <div class="navbar bg-base-100 container ">
+            <div class="navbar w-full bg-base-100 container mx-auto ">
   <div class="navbar-start">
     <div class="dropdown">
      
@@ -49,7 +49,7 @@ const Navbar = () => {
     </div>
     <Link to='/' class="btn btn-ghost normal-case text-xl">The AutoStore</Link>
   </div>
-  <div class="navbar-center hidden lg:flex">
+  <div class="navbar-end mx- hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
     {menu}
     </ul>

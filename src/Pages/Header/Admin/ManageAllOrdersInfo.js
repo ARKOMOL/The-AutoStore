@@ -10,7 +10,6 @@ const ManageAllOrdersInfo = ({order,index,handleToDelete}) => {
             <td>{orderQuantity}</td>
             <td>{phone}</td>
             <td>{address}</td>
-            <td><button className='btn btn-sm'>Pay</button></td>
             <td><button  className='btn btn-sm'>Cancel</button></td>
             
         </tr>

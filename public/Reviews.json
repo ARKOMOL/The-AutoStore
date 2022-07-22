@@ -2,32 +2,33 @@
     {
         "title":"Excellent Service",
         "name":"Barbara",
-        "ratings":"⭐⭐⭐⭐⭐",
+        "ratings":5,
         "review":"So surprised when Emmy reached out to me regarding my review of order number 56666637. It was a very small inconvenience, but I understand that for people who aren't internet savvy, it's important to give them easy instructions! Your customer service ROCKS!"
     },   {
-        "title":"Excellent Service",
-        "name":"Barbara",
-        "ratings":"⭐⭐⭐⭐⭐",
-        "review":"So surprised when Emmy reached out to me regarding my review of order number 56666637. It was a very small inconvenience, but I understand that for people who aren't internet savvy, it's important to give them easy instructions! Your customer service ROCKS!"
+        "title":"Great customer service",
+        "name":"Joseph R.",
+        "ratings":5,
+        "review":"Bought a non oe grill from carparts.com for my 300c to mod and was unaware that it did not include installation hardware along with having a slightly different mounting setup from my previous grill. I made mention of this in a review of the grill and though it was no fault of their own, they reimbursed me $20 to find hardware locally without me even reaching out to them directly"
     },   {
-        "title":"Excellent Service",
-        "name":"Barbara",
-        "ratings":"⭐⭐⭐⭐⭐",
-        "review":"So surprised when Emmy reached out to me regarding my review of order number 56666637. It was a very small inconvenience, but I understand that for people who aren't internet savvy, it's important to give them easy instructions! Your customer service ROCKS!"
+        "title":"Upgrading my review of Carparts.com",
+        "name":"Albert P.",
+        "ratings":4.5,
+        "review":" I recently placed my first order with CarParts, which was for a Honda fog lamp. It arrived 3 days later than promised and the bulb was missing. I was disappointed and gave them a 2 rating. They promptly contacted me and apologized for the delay and refunded me the price of the bulb.I appreciate that and upgrading my rating to a 4. I will likely order from them again."
     },   {
-        "title":"Excellent Service",
-        "name":"Barbara",
-        "ratings":"⭐⭐⭐⭐⭐",
-        "review":"So surprised when Emmy reached out to me regarding my review of order number 56666637. It was a very small inconvenience, but I understand that for people who aren't internet savvy, it's important to give them easy instructions! Your customer service ROCKS!"
+        "title":"Poor quality body parts- they sell manufacture rejected parts",
+        "name":"Mark L.",
+        "ratings":5,
+        "review":"Purchased 2003 Chevy Tracker rear bumper.Received in 5 days new bumper but... can't Install because lower mounting holes are out of alignment and one left upper mounting hole is cracked."
     },   {
-        "title":"Excellent Service",
-        "name":"Barbara",
-        "ratings":"⭐⭐⭐⭐⭐",
-        "review":"So surprised when Emmy reached out to me regarding my review of order number 56666637. It was a very small inconvenience, but I understand that for people who aren't internet savvy, it's important to give them easy instructions! Your customer service ROCKS!"
-    },   {
-        "title":"Excellent Service",
-        "name":"Barbara",
-        "ratings":"⭐⭐⭐⭐⭐",
-        "review":"So surprised when Emmy reached out to me regarding my review of order number 56666637. It was a very small inconvenience, but I understand that for people who aren't internet savvy, it's important to give them easy instructions! Your customer service ROCKS!"
-    }
+        "title":"Fantastic support!",
+        "name":"Joseph V.",
+        "ratings":4.5,
+        "review":"I initially had an issue with LSO delivery. CarParts fixed the problem even though it was not an issue with CarParts. Fantastic service! And the window regulator fit and worked like OEM. I'm very happy. Now to see what other stuff I can replace...JoeReference order #56577347        Products used:2010 Town and Country Passenger Window Regulator"      
+      },  
+         {
+        "title":"Headlamp Assembly for a 2001 Mitsubishi Mirage DE Coupe",
+        "name":"Josue V.",
+        "ratings":5,
+        "review":"I ordered a Headlamp Assembly and associated Corner Light for the driver*s side. It arrived at the body shop. The bulb in the Headlamp Assembly bulb did not work. The body shop replaced that piece. I let Car Parts know that and Shen S. Was kind enough to credit my DiscoverCard $5.00. I was told that it would take 24 - 48 hours and it was processed inside of 30 minutes. GOOD JOB!"
+         }   
 ]
