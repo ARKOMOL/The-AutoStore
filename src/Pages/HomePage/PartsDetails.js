@@ -15,7 +15,7 @@ const PartsDetails = ({part}) => {
             <div class="card-body items-center text-center">
                 <h2 class="card-title">{name}</h2>
                 <p>{description}</p>
-                <p>Minumum Buy:- {minQuantity} </p>
+                <p>Minumum Buy: {minQuantity} </p>
                 <p>Available Parts: {availableQuantity} </p>
                 <p>Price: ${price} </p>
                 <div class="card-actions">
